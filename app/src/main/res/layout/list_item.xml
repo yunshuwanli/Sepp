@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/thumbLayout" android:layout_width="128dp" android:layout_height="64dp">
+        <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp"/>
+        <ImageView android:id="@+id/ivStatu" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_centerInParent="true" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatTextView android:gravity="center_vertical" android:id="@+id/url_tv" android:layout_width="match_parent" android:layout_height="26dp" android:text="演示影片1" android:layout_toRightOf="@+id/thumbLayout" android:layout_alignTop="@+id/thumbLayout" app:autoSizeMaxTextSize="14sp" app:autoSizeMinTextSize="10sp" app:autoSizeTextType="1"/>
+    <TextView android:textSize="10sp" android:gravity="center_vertical" android:id="@+id/state_tv" android:layout_width="match_parent" android:layout_height="20dp" android:text="暂停中" android:layout_toRightOf="@+id/thumbLayout" android:layout_below="@+id/url_tv"/>
+    <TextView android:textSize="12sp" android:gravity="center_vertical" android:id="@+id/progress_tv" android:layout_width="match_parent" android:layout_height="20dp" android:text="100%" android:layout_toRightOf="@+id/thumbLayout" android:layout_below="@+id/state_tv" android:layout_alignBottom="@+id/thumbLayout"/>
+</RelativeLayout>

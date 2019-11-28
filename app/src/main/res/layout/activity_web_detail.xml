@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView android:id="@+id/web_top_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:layout_width="match_parent" android:layout_height="200dp"/>
+            <com.yase999.app.ScrollWebView android:id="@+id/scroll_webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <Button android:id="@+id/btn_next_video" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/web_top_layout_video" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.yase999.app.PreViewGSYVideoPlayer android:id="@+id/web_player" android:layout_width="match_parent" android:layout_height="200dp"/>
+    </RelativeLayout>
+</RelativeLayout>

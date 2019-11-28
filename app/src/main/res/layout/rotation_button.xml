@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textColor="#f8f8ff" android:orientation="vertical" android:id="@+id/btn_delete" android:background="#000000" android:layout_width="match_parent" android:layout_height="64dp" android:text="旋转90°"/>
